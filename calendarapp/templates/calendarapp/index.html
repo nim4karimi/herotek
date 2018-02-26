@@ -1,10 +1,32 @@
 {% extends 'calendarapp/base.html' %}
-
+{% load static %}
 {% block content %}
-<div class="container">
-    <div class="jumbotron">
-      <h1>Herotek App 😅</h1>
-      <p>Python and Django power ❤️ </p>
+
+<!--**heading**-->
+  <section id="start">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12 xl12">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="{% static 'calendarapp/img/main_sec.png' %}">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</p>
+              </div>
+
+              <div class="card-action center-align">
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light blue btn modal-trigger" href="tel:04433485934">
+                  <i class="large left material-icons">call</i> مشاوره : ۰۴۴۳۳۴۸۵۹۳۴</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
 {% endblock %}
