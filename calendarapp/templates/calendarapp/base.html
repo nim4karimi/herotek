@@ -11,8 +11,16 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
+    {% include 'calendarapp/include/_menu.html' %}
     {% block content %}
     {% endblock %}
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'calendarapp/js/materialize.rtl.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+          $(".button-collapse").sideNav();
+          $('.slider').slider();
+    });
+    </script>
 </body>
 </html>
