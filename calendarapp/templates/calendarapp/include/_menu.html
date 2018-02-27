@@ -1,10 +1,11 @@
 <!--Start-->
+{% load static %}
   <!--**Navbar**-->
   <div class="navbar-fixed">
     <nav role="navigation">
       <div class="nav-wrapper blue">
-        <a class="brand-logo center" href="#">
-          <img src="img/top_logo_tr.png" />
+        <a class="brand-logo left" href="#">
+          <img src="{% static 'calendarapp/img/top_logo_tr.png'%}" />
         </a>
         <a class="button-collapse" href="#" data-activates="mobile-demo">
           <i class="material-icons">menu</i>
@@ -28,26 +29,26 @@
               <i class="material-icons right tinn">folder_special</i> تعرفه</a>
           </li>
         </ul>
-        <!--** Left Nav** -->
-        <ul class="left hide-on-med-and-down waves-effect">
-          <li>
-            <a href="#">
-              <i class="material-icons right tinn">loupe</i> نمونه کار</a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="material-icons right tinn">info_outline</i> درباره</a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="material-icons right tinn">insert_emoticon</i> تماس با ما</a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="material-icons right">search</i>
-            </a>
-          </li>
-        </ul>
+        <!--&lt;!&ndash;** Left Nav** &ndash;&gt;-->
+        <!--<ul class="left hide-on-med-and-down waves-effect">-->
+          <!--<li>-->
+            <!--<a href="#">-->
+              <!--<i class="material-icons right tinn">loupe</i> نمونه کار</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="#">-->
+              <!--<i class="material-icons right tinn">info_outline</i> درباره</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="#">-->
+              <!--<i class="material-icons right tinn">insert_emoticon</i> تماس با ما</a>-->
+          <!--</li>-->
+          <!--<li>-->
+            <!--<a href="#">-->
+              <!--<i class="material-icons right">search</i>-->
+            <!--</a>-->
+          <!--</li>-->
+        <!--</ul>-->
 
         <ul class="side-nav" id="mobile-demo">
           <li>
