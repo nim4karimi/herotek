@@ -1,0 +1,39 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--**heading**-->
+  <section id="start">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12 xl12">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="{% static 'app/img/main_sec.png' %}">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</p>
+              </div>
+              <div class="card-action center-align">
+                <!-- Modal Trigger -->
+                <a class="waves-effect waves-light blue btn modal-trigger" href="tel:04433485934">
+                  <i class="large left material-icons">call</i> تماس : ۰۴۴۳۳۴۸۵۹۳۴</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="row">
+        <div class="col s6 offset-s3 m4 offset-m4">
+          <div class="card-panel center-align">
+                <h5>
+                    <span class="red-text">از پذیرفتن هر صنفی معذوریم </span>
+                </h5>
+          </div>
+        </div>
+      </div>
+
+{% endblock %}

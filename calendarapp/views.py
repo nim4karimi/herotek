@@ -1,3 +1,3 @@
 from django.shortcuts import render
-def index(request):
+def calendar(request):
     return render(request, 'calendarapp/index.html')

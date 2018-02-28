@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Herotek</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    {% include 'app/include/_menu.html' %}
+    {% block content %}
+    {% endblock %}
+    {% include 'app/include/_footer.html' %}
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'app/js/materialize.rtl.min.js' %}"></script>
+    <script>
+        $(document).ready(function () {
+          $(".button-collapse").sideNav();
+          $('.slider').slider();
+    });
+    </script>
+</body>
+</html>
