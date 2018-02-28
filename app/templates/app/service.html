@@ -5,7 +5,7 @@
     <div class="row">
         {% for service in services %}
             <div class="col s6 m6 l6 xl6">
-                <h1>{{ service.name }}</h1>
+                {{ service.name }}
                 {{ service.desc }}
             </div>
         {% endfor %}
