@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for service in services %}
+            <div class="col s6 m6 l6 xl6">
+                <h1>{{ service.name }}</h1>
+                {{ service.desc }}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

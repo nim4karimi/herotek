@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('calendar/', views.calendar),
     path('', appview.index),
+    path('service/', appview.service),
 ]
