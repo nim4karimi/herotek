@@ -5,10 +5,18 @@
     <div class="row">
         {% for service in services %}
             <div class="col s6 m6 l6 xl6">
-                {{ service.name }}
-                {{ service.desc }}
-                {{ service.pic.url }}
-                <img src="{{ service.pic.url }}" alt="">
+                <div class="card small">
+                    <div class="card-image">
+                        <img src="{{ service.pic.url }}">
+                    </div>
+                            <div class="card-content">
+                                <span class="card-title">{{ service.name }}</span>
+                                <p>{{ service.desc }}</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#">This is a link</a>
+                            </div>
+                    </div>
             </div>
         {% endfor %}
     </div>
