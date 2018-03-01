@@ -7,6 +7,8 @@
             <div class="col s6 m6 l6 xl6">
                 {{ service.name }}
                 {{ service.desc }}
+                {{ service.pic.url }}
+                <img src="{{ service.pic.url }}" alt="">
             </div>
         {% endfor %}
     </div>
