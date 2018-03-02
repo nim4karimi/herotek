@@ -1,3 +1,4 @@
+{% load analytical %}
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -8,12 +9,16 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    {% analytical_head_top %}
+    {% analytical_head_bottom %}
 </head>
 <body>
     {% include 'app/include/_menu.html' %}
     {% block content %}
     {% endblock %}
     {% include 'app/include/_footer.html' %}
+    {% analytical_body_top %}
+    {% analytical_body_bottom %}
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="{% static 'app/js/materialize.rtl.min.js' %}"></script>
     <script>
