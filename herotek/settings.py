@@ -134,4 +134,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+# Analytic 
 GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-115020420-1'
+WOOPRA_DOMAIN = 'herotek.ir'
