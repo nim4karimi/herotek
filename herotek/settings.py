@@ -12,7 +12,6 @@ SECRET_KEY = 'kh7(@-j$2-smn10(hcm&*&qtrg*=og8@#iz&xv5+xv$marjrqv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['.herotek.ir','127.0.0.1']
 
 
@@ -97,13 +96,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 # Some Setting for config SSL

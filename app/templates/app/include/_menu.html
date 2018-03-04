@@ -21,15 +21,15 @@
               <i class="material-icons right tinn">star_border</i> سرویس</a>
           </li>
           <li>
-            <a href="#prudoct">
+            <a href="{% url 'product' %}">
               <i class="material-icons right tinn">share</i> محصولات</a>
           </li>
           <li>
-            <a href="#price">
+            <a href="{% url 'price' %}">
               <i class="material-icons right tinn">attach_file</i> تعرفه</a>
           </li>
           <li>
-            <a href="#price">
+            <a href="{% url 'contact' %}">
               <i class="material-icons right tinn">call</i> تماس</a>
           </li>
         </ul>
@@ -68,7 +68,15 @@
           <li>
             <a href="{% url 'service' %}"> سرویس</a>
           </li>
-
+          <li>
+            <a href="{% url 'product' %}"> محصولات</a>
+          </li>
+          <li>
+            <a href="{% url 'price' %}"> تعرفه</a>
+          </li>
+          <li>
+            <a href="{% url 'contact' %}"> تماس</a>
+          </li>
         </ul>
       </div>
     </nav>

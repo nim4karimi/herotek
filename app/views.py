@@ -8,3 +8,12 @@ def index(request):
 def service(request):
     services = Service.objects.all()
     return render(request, 'app/service.html', {'services':services})
+
+def contact(request):
+    return render(request, 'app/contact.html',)
+
+def product(request):
+    return render(request, 'app/product.html',)
+
+def price(request):
+    return render(request, 'app/price.html')

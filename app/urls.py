@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf import settings
 from django.urls import re_path , path
 from django.views.static import serve
-from .views import index , service
+from .views import index , service , contact , product, price
 urlpatterns = [
     path('', index),
     path('service/', service , name="service"),
+    path('contact/', contact , name="contact"),
+    path('product/', product , name="product"),
+    path('price/', price , name="price"),
 ]
 
 
