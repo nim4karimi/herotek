@@ -28,6 +28,8 @@ INSTALLED_APPS = [
     'app',
     'calendarapp',
     'analytical',
+    'captcha_admin',
+    'captcha',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +128,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # Analytic 
 GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-115020420-1'
 WOOPRA_DOMAIN = 'herotek.ir'
+
+
+# CaptCha xD
+
+RECAPTCHA_PUBLIC_KEY = '6LfWYEoUAAAAAKHQt0iglgupnAbeo74mLc5GTTcR'
+RECAPTCHA_PRIVATE_KEY = '6LfWYEoUAAAAAI5L9pX8YcWSq8Rrzw0DIvrHJON3'
+# If I'm not a Robot is required add:
+NOCAPTCHA = True
+
+RECAPTCHA_PROXY = 'http://127.0.0.1:8000'
