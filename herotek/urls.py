@@ -1,3 +1,22 @@
+
+#from django.contrib import admin
+from django.urls import path , include
+from calendarapp import views
+
+from captcha_admin import admin
+# This should stay the same
+admin.autodiscover()
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('calendar/', views.calendar),
+    path('', include('app.urls'))
+]
+
+
+
+
+
 """herotek URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -13,15 +32,3 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path , include
-from calendarapp import views
-from captcha_admin import admin
-# This should stay the same
-admin.autodiscover()
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('calendar/', views.calendar),
-    path('', include('app.urls'))
-]
