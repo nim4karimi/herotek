@@ -15,5 +15,5 @@ def contact(request):
 def product(request):
     return render(request, 'app/product.html',)
 
-def price(request):
-    return render(request, 'app/price.html')
+def req(request):
+    return render(request, 'app/req.html')

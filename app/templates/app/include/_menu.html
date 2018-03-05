@@ -4,7 +4,7 @@
   <div class="navbar-fixed">
     <nav role="navigation">
       <div class="nav-wrapper blue">
-        <a class="brand-logo left" href="#">
+        <a class="brand-logo left" href="/">
           <img src="{% static 'app/img/hero_logo.png' %}" />
         </a>
         <a class="button-collapse" href="#" data-activates="mobile-demo">
@@ -25,8 +25,8 @@
               <i class="material-icons right tinn">share</i> محصولات</a>
           </li>
           <li>
-            <a href="{% url 'price' %}">
-              <i class="material-icons right tinn">attach_file</i> تعرفه</a>
+            <a href="{% url 'req' %}">
+              <i class="material-icons right tinn">attach_file</i> فرم درخواست</a>
           </li>
           <li>
             <a href="{% url 'contact' %}">
@@ -72,7 +72,7 @@
             <a href="{% url 'product' %}"> محصولات</a>
           </li>
           <li>
-            <a href="{% url 'price' %}"> تعرفه</a>
+            <a href="{% url 'req' %}"> فرم درخواست</a>
           </li>
           <li>
             <a href="{% url 'contact' %}"> تماس</a>
