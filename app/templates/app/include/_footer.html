@@ -1,32 +1,42 @@
 {% load static %}
-  <!-- footer -->
+<!-- footer -->
 <footer class="page-footer blue">
     <div class="container">
-    <div class="row">
-        <div class="col l6 s12">
-        <!-- <img src="#"> -->
-        <h5 class="white-text">آدرس :</h5>
-        <p class="grey-text text-lighten-4">ارومیه، دانشکده ، کوچه ی منصوری افشار ، مجتمع مهر ، طبقه -۱ ، پلاک ۴۳
-        </p>
+        <div class="row">
+            <div class="col m3 s6 ">
+                <!-- <img src="#"> -->
+                
+                <p class="white-text"> دسترسی سریع :</p>
+                <ul class="right white-text">
+                    <li>
+                        <a href="/">
+                            <i class="material-icons right tinn">select_all</i> خانه</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'service' %}">
+                            <i class="material-icons right tinn">star_border</i> سرویس</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'product' %}">
+                            <i class="material-icons right tinn">share</i> محصولات</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'price' %}">
+                            <i class="material-icons right tinn">attach_file</i> تعرفه</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contact' %}">
+                            <i class="material-icons right tinn">call</i> تماس</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">تماس با ما :</h5>
-        <ul>
-            <li>
-            <a class="grey-text text-lighten-3" href="#!">تلفن : ۰۴۴۳۳۴۸۵۹۳۴ </a>
-            </li>
-            <li>
-            <a class="grey-text text-lighten-3" href="#!">همراه : ۰۹۱۴۱۴۳۶۰۸۸</a>
-            </li>
-        </ul>
-        </div>
-    </div>
+        <!-- End of Row -->
+
     </div>
     <div class="footer-copyright">
-    <div class="container">
-        <p class="white-text center-align">© تمامی حقوق مادی و معنوی وب سایت متعلق به شرکت هیروتک می باشد.</p>
-    </div>
+        <div class="container">
+            <p class="white-text center-align">© تمامی حقوق مادی و معنوی وب سایت متعلق به شرکت هیروتک می باشد.</p>
+        </div>
     </div>
 </footer>
-
-
