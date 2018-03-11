@@ -2,7 +2,6 @@
 #from django.contrib import admin
 from django.urls import path , include
 from calendarapp import views
-
 from captcha_admin import admin
 # This should stay the same
 admin.autodiscover()
@@ -10,7 +9,8 @@ admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('calendar/', views.calendar),
-    path('', include('app.urls'))
+    path('', include('app.urls')),
+
 ]
 
 

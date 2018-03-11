@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf import settings
 from django.urls import re_path , path
 from django.views.static import serve
+from django.contrib.auth.views import login
 from .views import index , service , contact , product, req
 urlpatterns = [
     path('', index),
@@ -23,6 +24,8 @@ urlpatterns = [
     path('contact/', contact , name="contact"),
     path('product/', product , name="product"),
     path('req/', req , name="req"),
+    # Login Page
+    path('login/', login , {'template_name':'app/login.html'}, name ="login"),
 ]
 
 
