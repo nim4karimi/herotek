@@ -2,3 +2,8 @@ db.sqlite3
 app/__pychache__
 calendarapp/__pychache__
 herotek/__pychache__
+*.pyc
+__pycach__
+*.egg-info
+*.pot
+*.py[co]
