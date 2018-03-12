@@ -12,7 +12,7 @@ SECRET_KEY = 'kh7(@-j$2-smn10(hcm&*&qtrg*=og8@#iz&xv5+xv$marjrqv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['.herotek.ir','127.0.0.2']
+ALLOWED_HOSTS = ['.herotek.ir','127.0.0.3']
 
 
 # Application definition
