@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Service
+from .models import Service , Prod
 
 # Create your views here.
 def index(request):
@@ -13,7 +13,8 @@ def contact(request):
     return render(request, 'app/contact.html',)
 
 def product(request):
-    return render(request, 'app/product.html',)
+    prods = Prod.objects.all()
+    return render(request, 'app/product.html', {'prods': prods})
 
 def req(request):
     return render(request, 'app/req.html')
