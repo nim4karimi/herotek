@@ -1,4 +1,8 @@
-{% extends 'app/base.html' %} {% load static %} {% block content %}
+{% extends 'app/base.html' %} {% load static %} 
+{% block title %}
+<title>Herotek | Products</title>
+{% endblock %}
+{% block content %}
 <div class="container-fluid">
     <div class="row">
         {% for prod in prods %}
