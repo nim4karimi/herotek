@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'blog',
+    'markdownx',
     'calendarapp',
     'analytical',
     'captcha_admin',
@@ -125,7 +126,9 @@ RECAPTCHA_PRIVATE_KEY = '6LfWYEoUAAAAAI5L9pX8YcWSq8Rrzw0DIvrHJON3'
 # If I'm not a Robot is required add:
 NOCAPTCHA = True
 
+#Markdown
 
+MARKDOWNX_MARKDOWNIFY_FUNCTION = 'markdownx.utils.markdownify'
 #LOGIN 
 LOGIN_REDIRECT_URL = "/"
 

@@ -1,6 +1,6 @@
 
 #from django.contrib import admin
-from django.urls import path , include
+from django.urls import path , include ,re_path
 from calendarapp import views
 from captcha_admin import admin
 # This should stay the same
@@ -10,10 +10,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('calendar/', views.calendar),
     path('', include('app.urls')),
-    path('blog/', include('blog.urls'))
+    path('blog/', include('blog.urls')),
 
+    # MarkDown
 ]
-
+urlpatterns += [
+    re_path(r'^markdownx/', include('markdownx.urls')),
+]
 
 
 

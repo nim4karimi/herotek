@@ -1,5 +1,6 @@
 {% extends 'app/base.html' %} {% load static %} {% block title %}
 <title>Herotek | Blog</title>
+{% load markdownify %}
 {% endblock %} {% block content %}
 <div class="container-fluid">
   <div class="row">
@@ -10,7 +11,11 @@
           <div class="collapsible-header">
             <i class="material-icons">add</i>{{ post.headline }}</div>
           <div class="collapsible-body">
-            <span>{{ post.body_text }}</span>
+            <span>
+
+                {{ post.body|markdownify|safe}}
+
+            </span>
           </div>
         </li>
         {% endfor %}
@@ -19,4 +24,8 @@
   </div>
 </div>
 
+
+
+
+}
 {% endblock %}

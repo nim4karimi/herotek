@@ -1,4 +1,6 @@
 from django.db import models
+from markdownx.models import MarkdownxField
+
 
 # Create your models here.
 class Blog(models.Model):
@@ -18,6 +20,7 @@ class Author(models.Model):
 class Entry(models.Model):
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
     headline = models.CharField(max_length=255)
+    body = MarkdownxField(null=True)
     body_text = models.TextField()
     pub_date = models.DateField()
     mod_date = models.DateField()
