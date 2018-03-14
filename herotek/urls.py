@@ -10,6 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('calendar/', views.calendar),
     path('', include('app.urls')),
+    path('blog/', include('blog.urls'))
 
 ]
 
