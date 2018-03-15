@@ -7,14 +7,14 @@ from .models import ApiTest
 class ApiSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ApiTest
-        fields = ('name','decription')
-
+        fields = ('name','decription' , 'pic' , 'email' , 'phone' , 'slug')
 
 # Serializers define the API representation.
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
         fields = ('url', 'username', 'email', 'is_staff')
+
 
 class ApiViewSet(viewsets.ModelViewSet):
     queryset = ApiTest.objects.all()
@@ -29,6 +29,7 @@ class UserViewSet(viewsets.ModelViewSet):
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'apitest', ApiViewSet)
+
 
 
 # Wire up our API using automatic URL routing.
