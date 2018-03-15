@@ -3,6 +3,7 @@
 from django.urls import path , include ,re_path
 from calendarapp import views
 from captcha_admin import admin
+from django.contrib.auth.models import User
 # This should stay the same
 admin.autodiscover()
 
@@ -11,6 +12,7 @@ urlpatterns = [
     path('calendar/', views.calendar),
     path('', include('app.urls')),
     path('blog/', include('blog.urls')),
+    path('apiv1/', include('apiv1.urls')),
 
     # MarkDown
 ]

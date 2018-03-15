@@ -26,6 +26,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'blog',
+    'apiv1',
+
+    #third party
+    'rest_framework',
     'markdownx',
     'calendarapp',
     'analytical',
@@ -125,6 +129,15 @@ RECAPTCHA_PUBLIC_KEY = '6LfWYEoUAAAAAKHQt0iglgupnAbeo74mLc5GTTcR'
 RECAPTCHA_PRIVATE_KEY = '6LfWYEoUAAAAAI5L9pX8YcWSq8Rrzw0DIvrHJON3'
 # If I'm not a Robot is required add:
 NOCAPTCHA = True
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
 
 #Markdown
 
