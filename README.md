@@ -13,18 +13,18 @@
 
 ## 🙌🏼 How to Contribute?
 
-You are more than welcome to contribute and build your own cheatsheet for your favorite programming language, framework or development tool. Just submit changes via pull request and I will review them before merging.
+You are more than welcome to contribute and build your own for your favorite programming language, framework or development tool. Just submit changes via pull request and I will review them before merging.
 
 
 
 ### 📦 Backend
 
 <details>
-<summary>View cheatsheets</summary>
+<summary>View </summary>
 
 #### Python
 
-* [Django](backend/django.py)
+* [Django](#)
 
 #### Javascript
   
