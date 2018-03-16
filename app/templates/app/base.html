@@ -5,34 +5,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    {% block title %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> {% block title %}
     <title>Herotek</title>
-    {% endblock %} 
-
-    
-    {% load static %}
+    {% endblock %} {% load static %}
     <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /> 
-    <script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,localStorage.getItem("7cb3149d-0cac-49b6-8805-a17397f27ac9")?t.src="https://app.raychat.io/scripts/js/"+o+"?rid="+localStorage.getItem("rayToken")+"&href="+window.location.href:t.src="https://app.raychat.io/scripts/js/"+o;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var e=document,a=window,o="7cb3149d-0cac-49b6-8805-a17397f27ac9";"complete"==e.readyState?t():a.attachEvent?a.attachEvent("onload",t):a.addEventListener("load",t,!1)}();</script>
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'app/img/favi/apple-icon-60x60.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'app/img/favi/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'app/img/favi/favicon-32x32.png' %}">
+    <link rel="manifest" href="{% static 'app/img/favi/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'app/img/favi/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script type="text/javascript">
+        ! function () {
+            function t() {
+                var t = document.createElement("script");
+                t.type = "text/javascript", t.async = !0, localStorage.getItem("7cb3149d-0cac-49b6-8805-a17397f27ac9") ?
+                    t.src = "https://app.raychat.io/scripts/js/" + o + "?rid=" + localStorage.getItem("rayToken") +
+                    "&href=" + window.location.href : t.src = "https://app.raychat.io/scripts/js/" + o;
+                var e = document.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(t, e)
+            }
+            var e = document,
+                a = window,
+                o = "7cb3149d-0cac-49b6-8805-a17397f27ac9";
+            "complete" == e.readyState ? t() : a.attachEvent ? a.attachEvent("onload", t) : a.addEventListener("load",
+                t, !1)
+        }();
+    </script>
     {% analytical_head_top %} {% analytical_head_bottom %}
-    
+
 </head>
 
 <body>
 
-    {% include 'app/include/_menu.html' %}
-    {% block content %} {% endblock %} 
-    {% include 'app/include/_footer.html' %} 
-    {% analytical_body_top%} {% analytical_body_bottom %}
+    {% include 'app/include/_menu.html' %} {% block content %} {% endblock %} {% include 'app/include/_footer.html' %} {% analytical_body_top%}
+    {% analytical_body_bottom %}
     <script src="{% static 'app/js/jquery2-1-1.js' %}"></script>
     <script src="{% static 'app/js/materialize.rtl.min.js' %}"></script>
     <script>
         $(document).ready(function () {
-          $(".button-collapse").sideNav();
-    });
+            $(".button-collapse").sideNav();
+            $('.collapsible').collapsible();
+        });
     </script>
-    
+
 </body>
+
 </html>

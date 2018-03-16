@@ -1,41 +1,82 @@
-{% extends 'app/base.html' %}
-{% load static %}
-
-{% block title %}
+{% extends 'app/base.html' %} {% load static %} {% block title %}
 <title>Herotek | Home</title>
-{% endblock %}
+{% endblock %} {% block content %}
 
-{% block content %}
-        
 <!--**heading**-->
-  <section id="start">
-    <div class="container">
-      <div class="row">
-          <div class="chip red-text"><i class="close material-icons">close</i>
-             از پذیرفتن همکاری با هر صنفی معذوریم 
-          </div>    
-        <div class="col s12 m12 l12 xl12">
-          <div class="card hoverable">
-            <div class="card-image">
-              <img src="{% static 'app/img/main_sec.png' %}">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content center-align">
-                <a class="waves-effect waves-light blue btn modal-trigger" href="tel:04433485934">
-                    <i class="large left material-icons">call</i> پشتیبانی : ۰۴۴۳۳۴۸۵۹۳۴</a>
-              </div>
+<section id="start">
+  <div class="container">
+    <div class="row">
+      <div class="chip red-text">
+        <i class="close material-icons">close</i>
+        از پذیرفتن همکاری با هر صنفی معذوریم
+      </div>
+      <div class="col s12 m12 l12 xl12">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{% static 'app/img/main_sec.png' %}">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content center-align">
+              <a class="waves-effect waves-light blue btn modal-trigger" href="tel:04433485934">
+                <i class="large left material-icons">call</i> پشتیبانی : ۰۴۴۳۳۴۸۵۹۳۴</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-<div class="container">
-  <div class="row">
-      <p class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</p>
-        <div class="col s10 offset-s1 m10 offset-m1 l12 xl12">
-          <img src="{% static 'app/img/techver1.png' %}" alt="New Technolgys" class="responsive-img">
+  </div>
+</section>
+<br>
+<br>
+<br>
+
+
+<div class="section" style="background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);">
+
+
+  <div class="row container ">
+    <br>
+    <!-- <div class="col s12 m8 offset-m2 ">
+      <h3 class="white-text center-text"> یرسیتنشان</h3>
+    </div> -->
+    <div class="col s8 offset-s2 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'app/img/new_tech.png' %}">
         </div>
+      </div>
     </div>
+    <div class="col s8 offset-s2 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'app/img/dev.png' %}">
+        </div>
+      </div>
+    </div>
+    <div class="col s8 offset-s2 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="{% static 'app/img/seo.png' %}">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+      <h5 class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</h5>
+      <br>
+      <br>
+      <div class="col s10 offset-s1 m10 offset-m1 l12 xl12">
+        <img src="{% static 'app/img/techver1.png' %}" alt="New Technolgys" class="responsive-img">
+      </div>
+    </div>
+  </div>
+<br>
+<br>
+
 {% endblock %}
