@@ -28,6 +28,8 @@ class Entry(models.Model):
     n_comments = models.IntegerField()
     n_pingbacks = models.IntegerField()
     rating = models.IntegerField()
+    slug = models.SlugField(null=True , blank=True)
+
 
     def __str__(self):
         return self.headline

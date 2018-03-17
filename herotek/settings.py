@@ -143,8 +143,7 @@ MARKDOWNX_MARKDOWNIFY_FUNCTION = 'markdownx.utils.markdownify'
 #LOGIN 
 LOGIN_REDIRECT_URL = "/"
 
-# Some Setting for config 
-
+Some secure sh*T
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
