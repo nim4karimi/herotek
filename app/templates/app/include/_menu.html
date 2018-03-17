@@ -25,13 +25,9 @@
             <i class="material-icons right tinn">explore</i> محصولات</a>
         </li>
         <li>
-            <a href="{% url 'entry-list' %}">
-              <i class="material-icons right tinn">attach_file</i>بلاگ</a>
+          <a href="{% url 'entry-list' %}">
+            <i class="material-icons right tinn">attach_file</i>بلاگ</a>
         </li>
-          <!--<li>-->
-            <!--<a href="{% url 'contact' %}">-->
-              <!--<i class="material-icons right tinn">call</i> تماس</a>-->
-          <!--</li>-->
         {% if user.is_authenticated %}
         <li>
           <a href="{% url 'logout' %}">
@@ -53,7 +49,7 @@
         <li>
           <div class="user-view">
             <div class="background">
-              <img src="#">
+              <img src="{% static 'app/img/menu_.png' %}">
             </div>
           </div>
         </li>
@@ -67,11 +63,20 @@
           <a href="{% url 'product' %}"> محصولات</a>
         </li>
         <li>
-          <!-- <a href="{% url 'req' %}"> فرم درخواست</a>
-          </li>
-          <li>
-            <a href="{% url 'contact' %}"> تماس</a>
-          </li> -->
+          <a href="{% url 'entry-list' %}"> بلاگ</a>
+        </li>
+        {% if user.is_authenticated %} 
+        <li>
+          <a href="{% url 'logout' %}"> خروج</a>
+        </li>
+        {% else %} 
+        <li>
+          <a href="{% url 'login' %}"> ورود</a>
+        </li>
+        <li>
+          <a href="{% url 'register' %}"> ثبت نام</a>
+        </li>
+        {% endif %}
       </ul>
     </div>
   </nav>

@@ -87,3 +87,7 @@ img.grayscale {
     filter: none;
     -webkit-filter: grayscale(0%);
   }
+
+  .slidemarg{
+      margin: 50px 0 80px 0 !important;
+  }
