@@ -5,9 +5,7 @@ from django.views.static import serve
 from .views import EntryDetailView , EntryListView
 
 
-from .views import post_list
 urlpatterns = [
-    # path('', post_list, name="blog"),
 
     #List View
     path('', EntryListView.as_view(), name='entry-list'),
