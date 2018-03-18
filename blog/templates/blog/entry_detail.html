@@ -9,10 +9,12 @@
     <div class="row">
         <div class="col s12 m10 offset-m1 ">
             <div class="card-panel">
-                {{ object.headline }} 
-                {{ object.pub_date }}
+                <h5> {{ object.headline }} </h5>
+                <hr>
                 {{ object.body|markdownify|safe}}
-                {{ object.authors }}
+            </div>  
+            <div class="card-panel">
+                <p>{{ object.pub_date }}</p> 
             </div>
         </div>
     </div>
