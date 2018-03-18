@@ -1,18 +1,21 @@
 {% extends 'app/base.html' %}
-{% load static %}
-{% load markdownify %}
+{% load static %} 
+{% load markdownify %} 
 {% block title %}
 <title>Herotek | Blog </title>
-{% endblock %}
-
+{% endblock %} 
 {% block content %}
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col s12 m12 l12 xl12">
-            {{ object.headline }}
-            {{ object.body|markdownify|safe}}
+        <div class="col s12 m10 offset-m1 ">
+            <div class="card-panel">
+                {{ object.headline }} 
+                {{ object.pub_date }}
+                {{ object.body|markdownify|safe}}
+                {{ object.authors }}
             </div>
         </div>
     </div>
+</div>
 </div>
 {% endblock %}

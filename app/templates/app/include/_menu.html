@@ -54,27 +54,27 @@
           </div>
         </li>
         <li>
-          <a href="/"> خانه</a>
+          <a class="waves-effect " href="/"> خانه</a>
         </li>
         <li>
-          <a href="{% url 'service' %}"> سرویس</a>
+          <a class="waves-effect" href="{% url 'service' %}"> سرویس</a>
         </li>
         <li>
-          <a href="{% url 'product' %}"> محصولات</a>
+          <a class="waves-effect" href="{% url 'product' %}"> محصولات</a>
         </li>
         <li>
-          <a href="{% url 'entry-list' %}"> بلاگ</a>
+          <a class="waves-effect" href="{% url 'entry-list' %}"> بلاگ</a>
         </li>
         {% if user.is_authenticated %} 
         <li>
-          <a href="{% url 'logout' %}"> خروج</a>
+          <a class="waves-effect" href="{% url 'logout' %}"> خروج</a>
         </li>
         {% else %} 
         <li>
-          <a href="{% url 'login' %}"> ورود</a>
+          <a class="waves-effect" href="{% url 'login' %}"> ورود</a>
         </li>
         <li>
-          <a href="{% url 'register' %}"> ثبت نام</a>
+          <a class="waves-effect" href="{% url 'register' %}"> ثبت نام</a>
         </li>
         {% endif %}
       </ul>
