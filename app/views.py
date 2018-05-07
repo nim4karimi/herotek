@@ -27,7 +27,8 @@ def req(request):
     return render(request, 'app/req.html')
 
 
-#Register
+
+# Register
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)

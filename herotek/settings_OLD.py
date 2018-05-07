@@ -1,16 +1,13 @@
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-
-# Quick-start development settings - unsuitable for production  | See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'kh7(@-j$2-smn10(hcm&*&qtrg*=og8@#iz&xv5+xv$marjrqv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['.herotek.ir','127.0.0.11']
+ALLOWED_HOSTS = ['.herotek.ir','127.0.0.1']
 
 
 # Application definition
@@ -78,7 +75,6 @@ DATABASES = {
 
 
 # Password validation
-# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -143,9 +139,9 @@ MARKDOWNX_MARKDOWNIFY_FUNCTION = 'markdownx.utils.markdownify'
 #LOGIN 
 LOGIN_REDIRECT_URL = "/"
 
-# Some secure sh*T
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE= True
+# SSL Config
+#
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_SSL_REDIRECT = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE= True
