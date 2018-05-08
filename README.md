@@ -1,22 +1,32 @@
-# Herotek 
-### Nim4 Karimi 
+# Herotek 🐍
+### Nim4 Karimi
 
-## Its started in 2018 🐍
+```
+colorama==0.3.9
+decorator==4.2.1
+Django==2.0.5
+django-analytical==2.4.0
+django-captcha-admin==0.2
+django-filter==1.1.0
+django-markdownx==2.0.22
+django-recaptcha==1.3.0
+djangorestframework==3.7.7
+ipython==6.2.1
+ipython-genutils==0.2.0
+jedi==0.11.1
+Markdown==2.6.11
+parso==0.1.1
+pickleshare==0.7.4
+Pillow==5.0.0
+prompt-toolkit==1.0.15
+Pygments==2.2.0
+pytz==2018.4
+simplegeneric==0.8.1
+six==1.11.0
+traitlets==4.3.2
+wcwidth==0.1.7
 
-
-[Herotek ](app/static/app/img/main_sec.png)
-
-
-
-> 📚 frameworks and development tools. They include everything you should know in one single file.
-
-
-## 🙌🏼 How to Contribute?
-
-You are more than welcome to contribute and build your own for your favorite programming language, framework or development tool. Just submit changes via pull request and I will review them before merging.
-
-
-
+```
 ### 📦 Backend
 
 <details>
@@ -25,58 +35,6 @@ You are more than welcome to contribute and build your own for your favorite pro
 #### Python
 
 * [Django](#)
-
-#### Javascript
-  
-* [Feathers.js](backend/feathers.js)
-* [Moleculer](backend/moleculer.js)
-* [Node.js](backend/node.js)
-</details>
-
-
-### 🌐 Frontend
-
-<details>
-<summary>View cheatsheets</summary>
-
-#### Basics
-
-* [HTML5](frontend/html5.html)
-
-#### Frameworks
-
-* [Vue.js](frontend/vue.js)
-</details>
-
-
-### 🗃️ Databases
-
-<details>
-<summary>View cheatsheets</summary>
-
-#### NoSQL
-
-* [Redis](databases/redis.sh)
-</details>
-
-
-### 🔧 Tools
-
-<details>
-<summary>View cheatsheets</summary>
-
-#### Development
-
-* [VIM](tools/vim.txt)
-* [Xcode](tools/xcode.txt)
-
-#### Infrastructure
-
-* [Docker](tools/docker.sh)
-* [Kubernetes](tools/kubernetes.sh)
-* [Nanobox Boxfile](tools/nanobox_boxfile.yml)
-* [Nanobox CLI](tools/nanobox_cli.sh)
-</details>
 
 
 ## 🙏🏻 Contribution
