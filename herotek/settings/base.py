@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     #third party
     'rest_framework',
     'markdownx',
-    'calendarapp',
     'analytical',
     'captcha_admin',
     'captcha',

@@ -1,6 +1,4 @@
 # Project Herotek Log
 
-
- [2018-3-11 Sun]
-[2018-3-6 Tue]
-** TODO add Prudoct 
+** TODO ADD install django-summernote
+** TODO ADD install django debug toolbar

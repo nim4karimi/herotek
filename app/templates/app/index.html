@@ -2,122 +2,40 @@
 <title>Herotek | Home</title>
 {% endblock %} {% block content %}
 
-<!--**heading**-->
-<section id="start">
-  <div class="container">
-    <div class="row">
-      <div class="chip red-text">
-        <i class="close material-icons">close</i>
-        از پذیرفتن همکاری با هر صنفی معذوریم
-      </div>
-      <div class="col s12 m12 l12 xl12">
-        <div class="card hoverable">
-          <div class="card-image">
-            <img src="{% static 'app/img/Main_New_.png' %}">
-          </div>
-          <div class="card-stacked">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{# Main Section #}
+{% include 'app/include/home/_main_home.html' %}
 
+{# Future cards #}
+{% include 'app/include/home/_main_future_card.html' %}
 
+{# Slider Section #}
+{% include 'app/include/home/_main_slider.html' %}
 
-
-<div class="section" style="background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);">
-
-
-  <div class="row container ">
-    <br>
-    <!-- <div class="col s12 m8 offset-m2 ">
-      <h3 class="white-text center-text"> یرسیتنشان</h3>
-    </div> -->
-    <div class="col s8 offset-s2 m4">
-      <div class="card">
-        <div class="card-image">
-          <img src="{% static 'app/img/new_tech.png' %}">
-        </div>
-      </div>
-    </div>
-    <div class="col s8 offset-s2 m4">
-      <div class="card">
-        <div class="card-image">
-          <img src="{% static 'app/img/dev.png' %}">
-        </div>
-      </div>
-    </div>
-    <div class="col s8 offset-s2 m4">
-      <div class="card">
-        <div class="card-image">
-          <img src="{% static 'app/img/seo.png' %}">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="slider">
-  <ul class="slides">
-    <li>
-      <img src="{% static 'app/img/slide.png' %}"> 
-      <div class="caption center-align">
-        <h3 class="slidemarg"> اتوماسیون اداری eOffice </h3>
-        <h5 class="light grey-text text-lighten-3">فرایندهای خودکار و بی‌کاغذ</h5>
-      </div>
-    </li>
-    <li>
-      <img src="{% static 'app/img/slide.png' %}"> 
-      <div class="caption left-align">
-        <h3 class="slidemarg"> مدیریت ارتباط با مشتری CRM </h3>
-        <h5 class="light grey-text text-lighten-3">راهکار یکپارچه بازاریابی، فروش و پشتیبانی از مشتری</h5>
-      </div>
-    </li>
-    <li>
-      <img src="{% static 'app/img/slide.png' %}"> 
-      <div class="caption right-align">
-        <h3 class="slidemarg">سرور مجازی ابری</h3>
-        <h5 class="light grey-text text-lighten-3">با قابلیت تغییر آنی منابع (cpu,ram,hdd)</h5>
-      </div>
-    </li>
-    <!-- <li>
-      <img src="https://lorempixel.com/580/250/nature/4"> 
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li> -->
-  </ul>
-</div>
-    
 <br>
 <br>
 <br>
 
 
 
-<div class="container">
-    <div class="row">
-        <h5 class="center-align">برخی از مشتریان</h5>
-        <br>
-        
-        <div class="col s10 offset-s1 m10 offset-m1 l12 xl12">
-          <img src="{% static 'app/img/customer.png' %}" alt="New Technolgys" class="responsive-img grayscale">
-        </div>
-      </div>
-      <br>
-      <br>
-      <h6 class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</h6>
-      <br>
-      <br>
-      <div class="col s10 offset-s1 m10 offset-m1 l12 xl12">
-        <img src="{% static 'app/img/techver1.png' %}" alt="New Technolgys" class="responsive-img grayscale">
-      </div>
-    </div>
-  </div>
+{#<div class="container">#}
+{#    <div class="row">#}
+{#        <h5 class="center-align">برخی از مشتریان</h5>#}
+{#        <br>#}
+{#        #}
+{#        <div class="col s10 offset-s1 m10 offset-m1 l12 xl12">#}
+{#          <img src="{% static 'app/img/customer.png' %}" alt="New Technolgys" class="responsive-img grayscale">#}
+{#        </div>#}
+{#      </div>#}
+{#      <br>#}
+{#      <br>#}
+{#      <h6 class="center-align">پیشرفت و موفقیت ‌کسب‌وکار شما , با کمک تجربه و روش های نوین دیجیتالی ما</h6>#}
+{#      <br>#}
+{#      <br>#}
+{#      <div class="col s10 offset-s1 m10 offset-m1 l12 xl12">#}
+{#        <img src="{% static 'app/img/techver1.png' %}" alt="New Technolgys" class="responsive-img grayscale">#}
+{#      </div>#}
+{#    </div>#}
+
 <br>
 <br>
 <div class="card-content center-align">
