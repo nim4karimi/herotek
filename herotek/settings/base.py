@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'analytical',
     'captcha_admin',
     'captcha',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [
