@@ -20,15 +20,11 @@ class Author(models.Model):
 class Entry(models.Model):
     blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
     headline = models.CharField(max_length=255)
-    body = MarkdownxField(null=True)
+    slug = models.SlugField(null=True, blank=True)
     body_text = models.TextField()
     pub_date = models.DateField()
     mod_date = models.DateField()
     authors = models.ManyToManyField(Author)
-    n_comments = models.IntegerField()
-    n_pingbacks = models.IntegerField()
-    rating = models.IntegerField()
-    slug = models.SlugField(null=True , blank=True)
 
 
     def __str__(self):
