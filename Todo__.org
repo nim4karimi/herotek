@@ -1,2 +1,7 @@
 # Project Herotek Log
 
+* TODO Home
+** TODO add More text on first page
+
+* TODO Page
+** TODO add more page --> About
