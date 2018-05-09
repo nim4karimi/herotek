@@ -1,10 +1,9 @@
 from django.shortcuts import render , redirect
 from .models import Service , Prod
-
 # Import builtin Create Form 
 from django.contrib.auth.forms import UserCreationForm
 # Custom Cregester form
-from app.forms import RegisterationFrom
+# from app.forms import RegisterationFrom
 
 
 

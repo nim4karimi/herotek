@@ -1,5 +1,17 @@
 from .base import *
 
+ALLOWED_HOSTS = ['.herotek.ir']
+
+
+
+# Tempory Data Base
+# -----------------
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.hero'),
+    }
+}
 
 # SSL Config
 # ----------
@@ -7,7 +19,6 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE= True
-
 
 
 # Analytic

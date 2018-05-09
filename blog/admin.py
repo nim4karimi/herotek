@@ -10,7 +10,9 @@ admin.site.register(Author)
 class EntryPost(SummernoteModelAdmin):
     list_display = ['headline', 'blog',]
     list_filter = ['mod_date']
+
     summernote_fields = ('body_text',)
+
 
 admin.site.register(Entry , EntryPost)
 

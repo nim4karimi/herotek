@@ -10,7 +10,7 @@ INSTALLED_APPS +=[
 ]
 
 # local middle ware
-MIDDLEWARE = [
+MIDDLEWARE += [
     # ...
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]

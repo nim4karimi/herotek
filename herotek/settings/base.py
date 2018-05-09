@@ -6,8 +6,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = 'kh7(@-j$2-smn10(hcm&*&qtrg*=og8@#iz&xv5+xv$marjrqv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = ['.herotek.ir','127.0.0.1']
+DEBUG = False
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -125,7 +125,6 @@ REST_FRAMEWORK = {
 
 
 #Markdown
-
 MARKDOWNX_MARKDOWNIFY_FUNCTION = 'markdownx.utils.markdownify'
 #LOGIN
 LOGIN_REDIRECT_URL = "/"
