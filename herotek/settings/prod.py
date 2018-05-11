@@ -8,11 +8,14 @@ DEBUG = False
 # -----------------
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.hero'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'herotek',
+        'USER': 'nima',
+        'PASSWORD': '$$Nim$$karimi$$',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 
 # SSL Config
