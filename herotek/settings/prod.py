@@ -1,7 +1,7 @@
 from .base import *
 
 ALLOWED_HOSTS = ['.herotek.ir']
-
+DEBUG = False
 
 
 # Tempory Data Base
