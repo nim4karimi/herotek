@@ -4,80 +4,82 @@
 <div class="navbar-fixed">
   <nav role="navigation">
     <div class="nav-wrapper blue">
-      <a class="brand-logo left" href="/">
+      <a class="brand-logo left hide-on-small-and-down" href="/">
         <img src="{% static 'app/img/hero_logo.png' %}" />
       </a>
-      <a class="button-collapse" href="#" data-activates="mobile-demo">
-        <i class="material-icons">menu</i>
-      </a>
+{#      <a class="button-collapse" href="#" data-activates="mobile-demo">#}
+{#        <i class="material-icons">menu</i>#}
+{#      </a>#}
       <!-- **Right nav**-->
-      <ul class="right hide-on-med-and-down waves-effect">
+      <ul class="right waves-effect">
         <li>
-          <a href="/">
-            <i class="material-icons right tinn">dehaze</i> خانه</a>
+          <a href="/" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="صفحه نخست">
+            <i class="material-icons right">home</i></a>
         </li>
         <li>
-          <a href="{% url 'service' %}">
-            <i class="material-icons right tinn">devices_other</i> سرویس</a>
+          <a href="{% url 'service' %}" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip=" خدمات نوین">
+            <i class="material-icons right">devices_other</i></a>
         </li>
         <li>
-          <a href="{% url 'product' %}">
-            <i class="material-icons right tinn">explore</i> محصولات</a>
+          <a href="{% url 'product' %}" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="محصولات و سرویس های ابری">
+            <i class="material-icons right">explore</i></a>
         </li>
         <li>
           <a href="{% url 'entry-list' %}">
-            <i class="material-icons right tinn">attach_file</i>بلاگ</a>
+            <i class="material-icons right ">attach_file</i></a>
         </li>
         {% if user.is_authenticated %}
         <li>
           <a href="{% url 'logout' %}">
-            <i class="material-icons right tinn">person_add</i> خروج</a>
+            <i class="material-icons right ">person_add</i></a>
         </li>
         {% else %}
         <li>
           <a href="{% url 'login' %}">
-            <i class="material-icons right tinn">people</i> ورود</a>
+            <i class="material-icons right ">people</i></a>
         </li>
-        <li>
-          <a href="{% url 'register' %}">
-            <i class="material-icons right tinn">person_add</i> ثبت نام</a>
-        </li>
+{#        <li>#}
+{#          <a href="{% url 'register' %}">#}
+{#            <i class="material-icons right ">person_add</i></a>#}
+{#        </li>#}
         {% endif %}
       </ul>
 
-      <ul class="side-nav" id="mobile-demo" style="/* transform: translateX(150%); */">
-        <li>
-          <div class="user-view">
-            <div class="background">
-              <img src="{% static 'app/img/menu_.png' %}">
-            </div>
-          </div>
-        </li>
-        <li>
-          <a class="waves-effect " href="/"> خانه</a>
-        </li>
-        <li>
-          <a class="waves-effect" href="{% url 'service' %}"> سرویس</a>
-        </li>
-        <li>
-          <a class="waves-effect" href="{% url 'product' %}"> محصولات</a>
-        </li>
-        <li>
-          <a class="waves-effect" href="{% url 'entry-list' %}"> بلاگ</a>
-        </li>
-        {% if user.is_authenticated %} 
-        <li>
-          <a class="waves-effect" href="{% url 'logout' %}"> خروج</a>
-        </li>
-        {% else %} 
-        <li>
-          <a class="waves-effect" href="{% url 'login' %}"> ورود</a>
-        </li>
-        <li>
-          <a class="waves-effect" href="{% url 'register' %}"> ثبت نام</a>
-        </li>
-        {% endif %}
-      </ul>
+{#      <ul class="side-nav" id="mobile-demo" style="/* transform: translateX(150%); */">#}
+{#        <li>#}
+{#          <div class="user-view">#}
+{#            <div class="background">#}
+{#              <img src="{% static 'app/img/menu_.png' %}">#}
+{#            </div>#}
+{#          </div>#}
+{#        </li>#}
+{#        <li>#}
+{#          <a class="waves-effect " href="/"> خانه</a>#}
+{#        </li>#}
+{#        <li>#}
+{#          <a class="waves-effect" href="{% url 'service' %}"> سرویس</a>#}
+{#        </li>#}
+{#        <li>#}
+{#          <a class="waves-effect" href="{% url 'product' %}"> محصولات</a>#}
+{#        </li>#}
+{#        <li>#}
+{#          <a class="waves-effect" href="{% url 'entry-list' %}"> بلاگ</a>#}
+{#        </li>#}
+{#        {% if user.is_authenticated %} #}
+{#        <li>#}
+{#          <a class="waves-effect" href="{% url 'logout' %}"> خروج</a>#}
+{#        </li>#}
+{#        {% else %} #}
+{#        <li>#}
+{#          <a class="waves-effect" href="{% url 'login' %}"> ورود</a>#}
+{#        </li>#}
+{#        <li>#}
+{#          <a class="waves-effect" href="{% url 'register' %}"> ثبت نام</a>#}
+{#        </li>#}
+{#        {% endif %}#}
+{#      </ul>#}
+
+
     </div>
   </nav>
 </div>
