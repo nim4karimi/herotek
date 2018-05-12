@@ -1,6 +1,6 @@
-{% extends 'app/base.html' %} {% load static %} {% block title %}
-<title>Herotek | Home</title>
-{% endblock %} {% block content %}
+{% extends 'app/base.html' %} {% load static %}
+{% block title %} {{ block.super }}| خانه {% endblock %}
+{% block content %}
 
 {# Main Section #}
 {% include 'app/include/home/_main_home.html' %}
