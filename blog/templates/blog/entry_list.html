@@ -1,7 +1,9 @@
-{% extends 'app/base.html' %} {% load static %} {% block title %}
-<title>Herotek | Blog</title>
-{% load markdownify %}
-{% endblock %} {% block content %}
+{% extends 'app/base.html' %} {% load static %}
+
+{% block title %} {{ block.super }} | بلاگ ، آموزش ، اخبار و دانلود {% endblock %}
+
+
+{% block content %}
 <div class="container-fluid">
   <div class="row">
     <div class="col s12 m8 offset-m2 l6 offset-l3 xl12">
@@ -10,7 +12,7 @@
         <li>
           <div class="collapsible-header">
               <a href="{{ entry.slug }}">
-            <i class="material-icons">add</i>{{ entry.headline }}
+            <i class="material-icons">bookmark</i> {{ entry.headline }}
               </a>
           </div>
         </li>
