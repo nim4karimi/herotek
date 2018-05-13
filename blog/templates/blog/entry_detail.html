@@ -13,10 +13,11 @@
                 <h5> {{ object.headline }} </h5>
                 <hr>
                 {{ object.body_text|safe }}
+                <div class="card-action">
+                    <p>{{ object.pub_date }}</p>
+                </div>
             </div>  
-            <div class="card-panel">
-                <p>{{ object.pub_date }}</p>
-            </div>
+
         </div>
     </div>
 </div>
