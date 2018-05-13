@@ -1,23 +1,25 @@
 {% extends 'app/base.html' %}
-{% load static %} 
-{% load markdownify %} 
-{% block title %}
-<title>Herotek | Blog </title>
-{% endblock %} 
+{% load static %}
+{% block title %} {{ block.super }}| آرشیو {% endblock %}
+
+
+
 {% block content %}
+
 <div class="container">
     <div class="row">
         <div class="col s12 m10 offset-m1 ">
             <div class="card-panel">
                 <h5> {{ object.headline }} </h5>
                 <hr>
-                {{ object.body|markdownify|safe}}
+                {{ object.body_text|safe }}
             </div>  
             <div class="card-panel">
-                <p>{{ object.pub_date }}</p> 
+                <p>{{ object.pub_date }}</p>
             </div>
         </div>
     </div>
 </div>
-</div>
+
+
 {% endblock %}

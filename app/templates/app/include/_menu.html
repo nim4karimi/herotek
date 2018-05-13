@@ -21,28 +21,32 @@
             <i class="material-icons right">queue_play_next</i></a>
         </li>
         <li>
-          <a href="{% url 'product' %}" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="محصولات و سرویس های ابری">
+          <a href="{% url 'product' %}" class="white-text tooltipped" data-position="bottom" data-delay="200" data-tooltip="محصولات و سرویس های ابری">
             <i class="material-icons right">cloud_circle</i></a>
         </li>
         <li>
-          <a href="{% url 'entry-list' %}" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="بلاگ ، آموزش ، اخبار و دانلود">
+          <a href="{% url 'entry-list' %}" class="white-text tooltipped" data-position="bottom" data-delay="200" data-tooltip="بلاگ ، آموزش ، اخبار و دانلود">
             <i class="material-icons right ">textsms</i></a>
         </li>
         {% if user.is_authenticated %}
         <li>
-          <a href="{% url 'logout' %}" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="خروج">
-            <i class="material-icons right ">person_add</i></a>
+          <a href="{% url 'logout' %}" class="white-text tooltipped" data-position="bottom" data-delay="200" data-tooltip="خروج">
+            <i class="material-icons right ">sentiment_very_satisfied</i></a>
         </li>
         {% else %}
         <li>
-          <a href="{% url 'login' %}" class="white-text tooltipped" data-position="bottom" data-delay="50" data-tooltip="ناحیه کاربری">
-            <i class="material-icons right ">sentiment_very_satisfied</i></a>
+          <a href="{% url 'login' %}" class="white-text tooltipped" data-position="bottom" data-delay="200" data-tooltip="ناحیه کاربری">
+            <i class="material-icons right ">person_add</i></a>
         </li>
 {#        <li>#}
 {#          <a href="{% url 'register' %}">#}
 {#            <i class="material-icons right ">person_add</i></a>#}
 {#        </li>#}
         {% endif %}
+        <li>
+          <a href="#" class="white-text tooltipped" data-position="bottom" data-delay="200" data-tooltip="تماس با ما">
+            <i class="material-icons right ">call</i></a>
+        </li>
       </ul>
 
 {#      <ul class="side-nav" id="mobile-demo" style="/* transform: translateX(150%); */">#}
