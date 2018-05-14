@@ -1,20 +1,24 @@
-var scroll = new SmoothScroll('a[href*="#"]');
-$(document).ready(function () {
-    $(".button-collapse").sideNav();
-    $('.slider').slider();
-});
+// var scroll = new SmoothScroll('a[href*="#"]');
+// $(document).ready(function () {
+//     $(".button-collapse").sideNav();
+//     $('.slider').slider();
+// });
+
+
 window.sr = ScrollReveal();
-sr.reveal('.navbar-fixed', {
-     duration: 500,
+sr.reveal('#start', {
+     duration: 400,
      origin: 'top', 
 });
-sr.reveal('#start', {
+sr.reveal('.callsupport', {
     duration: 500,
-    delay: 1000,
-    origin: 'top', 
+    delay: 500,
+    // origin: 'buttom',
+    easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
 });
-sr.reveal('#services', {
+sr.reveal('.text--inblue', {
     duration: 500,
-    origin: 'bottom', 
+    origin: 'right',
+    viewFactor: 0.5,
 });
 

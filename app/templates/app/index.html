@@ -1,21 +1,25 @@
 {% extends 'app/base.html' %} {% load static %}
-{% block title %} {{ block.super }}| خانه {% endblock %}
+{% block title %} {{ block.super }}| صفحه نخست {% endblock %}
 {% block content %}
 
 {# Main Section #}
 {% include 'app/include/home/_main_home.html' %}
+
 {# include Intro main Design in pure staructer #}
 {#{% include 'app/include/home/_main_intro.html' %}#}
+
 {# Future cards #}
 {% include 'app/include/home/_main_future_card.html' %}
-
-
 
 {# Slider Section #}
 {% include 'app/include/home/_main_slider.html' %}
 {##}
+
+{# Text Section #}
+{#{% include 'app/include/home/_main_text_section.html' %}#}
+
 {# 6 Cards #}
-{% include 'app/include/home/_main_6_card.html' %}
+{#{% include 'app/include/home/_main_6_card.html' %}#}
 
 {##}
 {# Card Informations  #}
