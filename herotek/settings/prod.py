@@ -1,6 +1,6 @@
 from .base import *
 
-ALLOWED_HOSTS = ['.herotek.ir', '51.255.213.190']
+ALLOWED_HOSTS = ['.herotek.ir', '51.255.213.190', 'www.herotek.ir']
 DEBUG = False
 
 
