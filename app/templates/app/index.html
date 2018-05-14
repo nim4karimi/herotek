@@ -5,31 +5,26 @@
 {# Main Section #}
 {% include 'app/include/home/_main_home.html' %}
 
-{# include Intro main Design in pure staructer #}
-{#{% include 'app/include/home/_main_intro.html' %}#}
 
 {# Future cards #}
 {% include 'app/include/home/_main_future_card.html' %}
 
-{# Slider Section #}
-{% include 'app/include/home/_main_slider.html' %}
-{##}
+
 
 {# Text Section #}
-{#{% include 'app/include/home/_main_text_section.html' %}#}
+{% include 'app/include/home/_main_text_section.html' %}
 
-{# 6 Cards #}
-{#{% include 'app/include/home/_main_6_card.html' %}#}
-
+{# Slider Section #}
+{#{% include 'app/include/home/_main_slider.html' %}#}
 {##}
-{# Card Informations  #}
-{#{% include 'app/include/home/_main_cards_white.html' %}#}
+{# include Intro main Design in pure staructer #}
+{% include 'app/include/home/_main_intro.html' %}
 
-
-
-
-
-
+{% block jscripts %}
+    {{ block.super }}
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+{% endblock jscripts %}
+{##}
 
 
 

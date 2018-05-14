@@ -22,3 +22,10 @@ sr.reveal('.text--inblue', {
     viewFactor: 0.5,
 });
 
+
+sr.reveal('.card3image', {
+    duration: 500,
+    delay: 500,
+    origin: 'top',
+    viewFactor: 0.5,
+});

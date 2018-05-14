@@ -55,6 +55,9 @@
     {% analytical_body_top%}
     {% analytical_body_bottom %}
 
+    {# =================  #}
+    {# Java Scripts Block #}
+    {% block jscripts %}
     <script src="{% static 'app/js/jquery2-1-1.js' %}"></script>
     <script src="{% static 'app/js/materialize.rtl.min.js' %}"></script>
     <script src="{% static 'app/js/scrollreveal.min.js' %}"></script>
@@ -64,6 +67,8 @@
             $('.slider').slider();
         });
     </script>
+    {% endblock jscripts %}
+    {# =================  #}
 
 </body>
 
