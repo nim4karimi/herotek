@@ -34,12 +34,12 @@ sr.reveal('.webappanim2', {
     duration: 750,
     delay: 250,
     origin: 'left',
-    viewFactor: 0.3,
+    viewFactor: 0.4,
 });
 sr.reveal('.webappanim', {
     duration: 750,
     delay: 250,
     origin: 'left',
-    viewFactor: 0.3,
+    viewFactor: 0.4,
 });
 
