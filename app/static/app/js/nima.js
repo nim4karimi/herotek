@@ -29,3 +29,17 @@ sr.reveal('.card3image', {
     origin: 'top',
     viewFactor: 0.5,
 });
+
+sr.reveal('.webappanim2', {
+    duration: 750,
+    delay: 250,
+    origin: 'left',
+    viewFactor: 0.3,
+});
+sr.reveal('.webappanim', {
+    duration: 750,
+    delay: 250,
+    origin: 'left',
+    viewFactor: 0.3,
+});
+

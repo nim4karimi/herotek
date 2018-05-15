@@ -3,9 +3,3 @@
 
 * TODO add django taggit for blog
 
-* TODO Home
-** TODO add More text on first page
-
-
-* TODO Page
-** TODO add more page --> About
