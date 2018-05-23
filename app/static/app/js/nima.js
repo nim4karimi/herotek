@@ -42,4 +42,17 @@ sr.reveal('.webappanim', {
     origin: 'left',
     viewFactor: 0.4,
 });
+sr.reveal('.webappanim3', {
+    duration: 750,
+    delay: 250,
+    origin: 'left',
+    viewFactor: 0.4,
+});
+
+sr.reveal('.supportanim', {
+    duration: 750,
+    delay: 250,
+    origin: 'top',
+    viewFactor: 0.4,
+});
 
