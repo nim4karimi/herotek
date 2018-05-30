@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'app',
     'blog',
     'apiv1',
+    'servers',
 
     #third party
     'rest_framework',

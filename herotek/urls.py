@@ -13,6 +13,9 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
     path('apiv1/', include('apiv1.urls')),
 
+    # Include Urls From Servers
+    path('server/',include('servers.urls')),
+
 ]
 
 
