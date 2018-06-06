@@ -14,7 +14,7 @@
       <ul class="right waves-effect">
         <li>
           <a href="/" class="white-text" >
-            <i class="material-icons right tooltipped" data-position="bottom" data-delay="50" data-tooltip="صفحه نخست">home</i></a>
+            <i class="material-icons right tooltipped tiny" data-position="bottom" data-delay="50" data-tooltip="صفحه نخست">home</i></a>
         </li>
         <li>
           <a href="{% url 'service' %}" class="white-text">
@@ -24,11 +24,12 @@
           <a href="{% url 'product' %}" class="white-text">
             <i class="material-icons right tooltipped"  data-position="bottom" data-delay="50" data-tooltip="محصولات و سرویس های ابری">cloud_circle</i></a>
         </li>
+        {% if user.is_authenticated %}
         <li>
           <a href="{% url 'entry-list' %}" class="white-text">
             <i class="material-icons right tooltipped" data-position="bottom" data-delay="50" data-tooltip="بلاگ ، آموزش ، اخبار و دانلود">textsms</i></a>
         </li>
-        {% if user.is_authenticated %}
+
         <li>
           <a href="{% url 'logout' %}" class="white-text">
             <i class="material-icons right tooltipped" data-position="bottom" data-delay="50" data-tooltip="خروج">sentiment_very_satisfied</i></a>
