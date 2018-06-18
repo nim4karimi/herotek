@@ -16,6 +16,9 @@ urlpatterns = [
     # Include Urls From Servers
     path('server/',include('servers.urls')),
 
+    # Include Urls From Software
+    path('software/', include('software.urls')),
+
 ]
 
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{% load static %}
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        {% block title %}هیروتک | خدمات نوین کامپیوتری{% endblock %}
+    </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{% static 'app/new/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="{% static 'app/new/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+
+
+    {# Favicon #}
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'app/img/favi/apple-icon-60x60.png' %}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{% static 'app/img/favi/android-icon-192x192.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'app/img/favi/favicon-32x32.png' %}">
+    <link rel="manifest" href="{% static 'app/img/favi/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{% static 'app/img/favi/ms-icon-144x144.png' %}">
+    <meta name="theme-color" content="#ffffff">
+
+
+{#  {% analytical_head_top %}#}
+{#  {% analytical_head_bottom %}#}
+</head>
+
+<body>
+
+{#include menu #}
+{% include 'main/include/_menu.html' %}
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+{#{% include 'include/_footer.html' %}#}
+
+
+  <!--  Scripts-->
+{% block jscript %}
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{% static 'app/new/js/materialize.js' %}"></script>
+  <script src="{% static 'app/new/js/init.js' %}"></script>
+{% endblock %}
+
+
+
+{#{% analytical_body_top %}#}
+{#{% analytical_body_bottom %}#}
+</body>
+
+</html>
